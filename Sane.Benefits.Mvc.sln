@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sane.Benefits.Mvc", "src\Sane.Benefits.Mvc\Sane.Benefits.Mvc.csproj", "{CF6BEF76-7599-4D17-A557-11A7E4C3F025}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{90D0F469-BD7E-4A68-9169-FAF5C817AB43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sane.Benefits.Mvc.UnitTests", "tests\Sane.Benefits.Mvc.Tests\Sane.Benefits.Mvc.UnitTests.csproj", "{27758EC7-454A-41BB-809B-9E70B7439AEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{CF6BEF76-7599-4D17-A557-11A7E4C3F025}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF6BEF76-7599-4D17-A557-11A7E4C3F025}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF6BEF76-7599-4D17-A557-11A7E4C3F025}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27758EC7-454A-41BB-809B-9E70B7439AEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27758EC7-454A-41BB-809B-9E70B7439AEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27758EC7-454A-41BB-809B-9E70B7439AEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27758EC7-454A-41BB-809B-9E70B7439AEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{27758EC7-454A-41BB-809B-9E70B7439AEA} = {90D0F469-BD7E-4A68-9169-FAF5C817AB43}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A3A1BCF-B8CA-4668-998A-BDDA187E7F84}
