@@ -5,7 +5,7 @@ using Sane.Benefits.Models.Enums;
 using Sane.Benefits.Mvc.Controllers;
 using Sane.Benefits.Mvc.ViewModels;
 
-namespace Sane.Benefits.Mvc.UnitTests
+namespace Sane.Benefits.Mvc.UnitTests.BenefitsMvc.ControllerTests
 {
     [TestClass]
     public class RegisterControllerTests

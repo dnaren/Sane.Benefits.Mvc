@@ -70,10 +70,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CompanyControllerTests.cs" />
+    <Compile Include="BenefitsCore\Services\CompanyServiceTests.cs" />
+    <Compile Include="BenefitsMvc\ControllerTests\CompanyControllerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegisterControllerTests.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="BenefitsMvc\ControllerTests\RegisterControllerTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

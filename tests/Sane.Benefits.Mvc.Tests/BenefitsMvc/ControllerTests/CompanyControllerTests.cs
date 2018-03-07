@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Sane.Benefits.Models;
 
-namespace Sane.Benefits.Mvc.UnitTests
+namespace Sane.Benefits.Mvc.UnitTests.BenefitsMvc.ControllerTests
 {
     [TestClass]
     public class CompanyControllerTests

@@ -7,11 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sane.Benefits.Mvc", "src\Sa
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{90D0F469-BD7E-4A68-9169-FAF5C817AB43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sane.Benefits.Mvc.UnitTests", "tests\Sane.Benefits.Mvc.Tests\Sane.Benefits.Mvc.UnitTests.csproj", "{27758EC7-454A-41BB-809B-9E70B7439AEA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sane.Benefits.UnitTests", "tests\Sane.Benefits.Mvc.Tests\Sane.Benefits.UnitTests.csproj", "{27758EC7-454A-41BB-809B-9E70B7439AEA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{632DB4F1-245F-41FB-9AFF-1F9759905895}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sane.Benefits.Models", "Sane.Benefits.Models\Sane.Benefits.Models.csproj", "{D36A1C0A-DC0F-4D33-A530-D35651A15D4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sane.Benefits.Core", "Sane.Benefits.Core\Sane.Benefits.Core.csproj", "{3BEE0218-7289-4917-95B2-1C4636F86A10}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,10 @@ Global
 		{D36A1C0A-DC0F-4D33-A530-D35651A15D4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D36A1C0A-DC0F-4D33-A530-D35651A15D4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D36A1C0A-DC0F-4D33-A530-D35651A15D4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BEE0218-7289-4917-95B2-1C4636F86A10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BEE0218-7289-4917-95B2-1C4636F86A10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BEE0218-7289-4917-95B2-1C4636F86A10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BEE0218-7289-4917-95B2-1C4636F86A10}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +45,7 @@ Global
 		{CF6BEF76-7599-4D17-A557-11A7E4C3F025} = {632DB4F1-245F-41FB-9AFF-1F9759905895}
 		{27758EC7-454A-41BB-809B-9E70B7439AEA} = {90D0F469-BD7E-4A68-9169-FAF5C817AB43}
 		{D36A1C0A-DC0F-4D33-A530-D35651A15D4C} = {632DB4F1-245F-41FB-9AFF-1F9759905895}
+		{3BEE0218-7289-4917-95B2-1C4636F86A10} = {632DB4F1-245F-41FB-9AFF-1F9759905895}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A3A1BCF-B8CA-4668-998A-BDDA187E7F84}
