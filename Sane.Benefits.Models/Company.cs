@@ -1,6 +1,6 @@
 ﻿namespace Sane.Benefits.Models
 {
-    public class CompanyProfile
+    public class Company
     {
         public string DoingBusinessAs { get; set; }        
         public string LegalName { get; set; }

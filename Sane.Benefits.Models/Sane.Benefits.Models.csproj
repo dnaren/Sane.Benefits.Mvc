@@ -42,7 +42,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CompanyProfile.cs" />
+    <Compile Include="Company.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="Enums\NumberOfEmployees.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

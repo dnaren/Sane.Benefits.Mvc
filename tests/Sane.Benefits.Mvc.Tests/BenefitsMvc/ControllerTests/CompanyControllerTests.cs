@@ -10,7 +10,7 @@ namespace Sane.Benefits.Mvc.UnitTests.BenefitsMvc.ControllerTests
         public void AddCompanyTest()
         {
             //Arrange
-            var companyProfile = new CompanyProfile();
+            var companyProfile = new Company();
             //var companyController = new CompanyController();
 
             //Act
