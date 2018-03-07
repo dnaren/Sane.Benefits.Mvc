@@ -5,7 +5,7 @@ namespace Sane.Benefits.Infrastructure.Data
 {
     public interface IBenefitsContext
     {
-        IDbSet<Company> Companies { get; set; }
+        IDbSet<Company> Companies { get; }
     }
 
     public class BenefitsContext : DbContext, IBenefitsContext

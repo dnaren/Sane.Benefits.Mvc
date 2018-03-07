@@ -38,6 +38,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\..\packages\MSTest.TestFramework.1.2.0\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
     </Reference>
@@ -49,7 +52,9 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
     </Reference>
@@ -72,13 +77,21 @@
   <ItemGroup>
     <Compile Include="BenefitsCore\Services\CompanyServiceTests.cs" />
     <Compile Include="BenefitsMvc\ControllerTests\CompanyControllerTests.cs" />
+    <Compile Include="Mocks\InfrastructureData\FakeBenefitsContext.cs" />
+    <Compile Include="Mocks\InfrastructureData\FakeCompaniesSet.cs" />
+    <Compile Include="Mocks\InfrastructureData\FakeDbSet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BenefitsMvc\ControllerTests\RegisterControllerTests.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Sane.Benefits.Infrastructure\Sane.Benefits.Infrastructure.csproj">
+      <Project>{D0369016-DF3D-40A8-8864-E4021DB149AC}</Project>
+      <Name>Sane.Benefits.Infrastructure</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Sane.Benefits.Models\Sane.Benefits.Models.csproj">
       <Project>{D36A1C0A-DC0F-4D33-A530-D35651A15D4C}</Project>
       <Name>Sane.Benefits.Models</Name>
