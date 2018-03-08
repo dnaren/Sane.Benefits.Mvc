@@ -11,11 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sane.Benefits.UnitTests", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{632DB4F1-245F-41FB-9AFF-1F9759905895}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sane.Benefits.Models", "Sane.Benefits.Models\Sane.Benefits.Models.csproj", "{D36A1C0A-DC0F-4D33-A530-D35651A15D4C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sane.Benefits.Models", "src\Sane.Benefits.Models\Sane.Benefits.Models.csproj", "{D36A1C0A-DC0F-4D33-A530-D35651A15D4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sane.Benefits.Core", "Sane.Benefits.Core\Sane.Benefits.Core.csproj", "{3BEE0218-7289-4917-95B2-1C4636F86A10}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sane.Benefits.Infrastructure", "Sane.Benefits.Infrastructure\Sane.Benefits.Infrastructure.csproj", "{D0369016-DF3D-40A8-8864-E4021DB149AC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sane.Benefits.Core", "src\Sane.Benefits.Core\Sane.Benefits.Core.csproj", "{3BEE0218-7289-4917-95B2-1C4636F86A10}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,10 +37,6 @@ Global
 		{3BEE0218-7289-4917-95B2-1C4636F86A10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BEE0218-7289-4917-95B2-1C4636F86A10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BEE0218-7289-4917-95B2-1C4636F86A10}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D0369016-DF3D-40A8-8864-E4021DB149AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D0369016-DF3D-40A8-8864-E4021DB149AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D0369016-DF3D-40A8-8864-E4021DB149AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D0369016-DF3D-40A8-8864-E4021DB149AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,7 +46,6 @@ Global
 		{27758EC7-454A-41BB-809B-9E70B7439AEA} = {90D0F469-BD7E-4A68-9169-FAF5C817AB43}
 		{D36A1C0A-DC0F-4D33-A530-D35651A15D4C} = {632DB4F1-245F-41FB-9AFF-1F9759905895}
 		{3BEE0218-7289-4917-95B2-1C4636F86A10} = {632DB4F1-245F-41FB-9AFF-1F9759905895}
-		{D0369016-DF3D-40A8-8864-E4021DB149AC} = {632DB4F1-245F-41FB-9AFF-1F9759905895}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A3A1BCF-B8CA-4668-998A-BDDA187E7F84}
