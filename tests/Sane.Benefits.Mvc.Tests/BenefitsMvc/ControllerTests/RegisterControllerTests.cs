@@ -1,7 +1,7 @@
 ﻿using System.Net;
 using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Sane.Benefits.Models.Enums;
+using Sane.Benefits.DomainModels.Enums;
 using Sane.Benefits.Mvc.Controllers;
 using Sane.Benefits.Mvc.ViewModels;
 

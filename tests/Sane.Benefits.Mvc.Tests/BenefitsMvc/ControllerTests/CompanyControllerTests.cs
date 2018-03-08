@@ -1,5 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Sane.Benefits.Models;
+using Sane.Benefits.DomainModels;
 
 namespace Sane.Benefits.Mvc.UnitTests.BenefitsMvc.ControllerTests
 {

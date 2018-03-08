@@ -1,4 +1,4 @@
-﻿namespace Sane.Benefits.Models.Enums
+﻿namespace Sane.Benefits.DomainModels.Enums
 {
     public enum NumberOfEmployees
     {

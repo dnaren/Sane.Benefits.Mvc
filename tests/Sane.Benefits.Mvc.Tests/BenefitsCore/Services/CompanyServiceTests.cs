@@ -1,9 +1,9 @@
 ﻿using System.Data.Entity;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using Sane.Benefits.Core.Data;
 using Sane.Benefits.Core.Services;
-using Sane.Benefits.Models;
+using Sane.Benefits.Data;
+using Sane.Benefits.DomainModels;
 
 namespace Sane.Benefits.Mvc.UnitTests.BenefitsCore.Services
 {
@@ -14,21 +14,19 @@ namespace Sane.Benefits.Mvc.UnitTests.BenefitsCore.Services
         public void AddCompany()
         {
             //Arrange
-            var mockCompany = new Mock<DbSet<Company>>();
+            var companyToAdd = new Company();
+            var mockCompanySet = new Mock<DbSet<Data.Entities.Company>>();
             var mockBenefitsContext = new Mock<BenefitsContext>();
-            mockBenefitsContext.Setup(b => b.Companies).Returns(mockCompany.Object);
-            var expectedCompany = new Company
-            {
-                DoingBusinessAs = "Test Company",
-                LegalName = "Test Company"
-            };
+            mockBenefitsContext
+                .Setup(b => b.Companies).Returns(mockCompanySet.Object);
+            
             var companyService = new CompanyService(mockBenefitsContext.Object);
 
             //Act
-            companyService.Add(expectedCompany);
+            companyService.Add(companyToAdd);
 
             //Assert
-
+            mockBenefitsContext.Verify(c => c.SaveChanges(), Times.Once);
         }
     }
 }

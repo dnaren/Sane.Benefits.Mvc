@@ -1,4 +1,4 @@
-﻿using Sane.Benefits.Models.Enums;
+﻿using Sane.Benefits.DomainModels.Enums;
 
 namespace Sane.Benefits.Mvc.ViewModels
 {

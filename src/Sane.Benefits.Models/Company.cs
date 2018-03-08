@@ -1,4 +1,4 @@
-﻿namespace Sane.Benefits.Models
+﻿namespace Sane.Benefits.DomainModels
 {
     public class Company
     {

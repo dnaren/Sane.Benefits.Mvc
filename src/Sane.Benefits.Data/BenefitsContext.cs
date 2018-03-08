@@ -1,7 +1,7 @@
 ﻿using System.Data.Entity;
-using Sane.Benefits.Models;
+using Sane.Benefits.Data.Entities;
 
-namespace Sane.Benefits.Core.Data
+namespace Sane.Benefits.Data
 {
     public class BenefitsContext : DbContext
     {

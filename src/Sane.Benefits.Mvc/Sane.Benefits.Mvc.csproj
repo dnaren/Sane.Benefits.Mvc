@@ -106,9 +106,9 @@
     <Compile Include="ViewModels\NewUserViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Sane.Benefits.Models\Sane.Benefits.Models.csproj">
+    <ProjectReference Include="..\Sane.Benefits.Models\Sane.Benefits.DomainModels.csproj">
       <Project>{D36A1C0A-DC0F-4D33-A530-D35651A15D4C}</Project>
-      <Name>Sane.Benefits.Models</Name>
+      <Name>Sane.Benefits.DomainModels</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

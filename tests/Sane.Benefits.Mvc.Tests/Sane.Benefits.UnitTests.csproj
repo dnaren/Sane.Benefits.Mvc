@@ -105,9 +105,13 @@
       <Project>{3BEE0218-7289-4917-95B2-1C4636F86A10}</Project>
       <Name>Sane.Benefits.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\src\Sane.Benefits.Models\Sane.Benefits.Models.csproj">
+    <ProjectReference Include="..\..\src\Sane.Benefits.Data\Sane.Benefits.Data.csproj">
+      <Project>{F1AB20D2-7C86-4177-9164-75B58245398A}</Project>
+      <Name>Sane.Benefits.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Sane.Benefits.Models\Sane.Benefits.DomainModels.csproj">
       <Project>{D36A1C0A-DC0F-4D33-A530-D35651A15D4C}</Project>
-      <Name>Sane.Benefits.Models</Name>
+      <Name>Sane.Benefits.DomainModels</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\src\Sane.Benefits.Mvc\Sane.Benefits.Mvc.csproj">
       <Project>{CF6BEF76-7599-4D17-A557-11A7E4C3F025}</Project>
