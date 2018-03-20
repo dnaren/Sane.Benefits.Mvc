@@ -1,4 +1,4 @@
-﻿using AutoMapper;
+﻿using System;
 using Sane.Benefits.Core.Interfaces;
 using Sane.Benefits.Data;
 using Sane.Benefits.DomainModels;
@@ -16,9 +16,7 @@ namespace Sane.Benefits.Core.Services
 
         public void Add(Company company)
         {
-            var companyEntity = Mapper.Map<Data.Entities.Company>(company);
-            _benefitsContext.Companies.Add(companyEntity);
-            _benefitsContext.SaveChanges();
+            throw new NotImplementedException();
         }
     }
 }
