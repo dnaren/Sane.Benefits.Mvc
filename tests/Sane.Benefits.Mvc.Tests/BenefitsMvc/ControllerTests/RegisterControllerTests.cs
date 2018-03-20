@@ -1,6 +1,9 @@
 ﻿using System.Net;
 using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Moq;
+using Sane.Benefits.Core.Interfaces;
+using Sane.Benefits.DomainModels;
 using Sane.Benefits.DomainModels.Enums;
 using Sane.Benefits.Mvc.Controllers;
 using Sane.Benefits.Mvc.ViewModels;
@@ -23,13 +26,19 @@ namespace Sane.Benefits.Mvc.UnitTests.BenefitsMvc.ControllerTests
                 Title = "Senior HR Specialist",
                 NumberOfEmployees = NumberOfEmployees.Xs
             };
-            var registerController = new RegisterController();
+            var mockCompanyServices = new Mock<ICompanyService>();
+            var mockUserServices = new Mock<IUserService>();
+            mockCompanyServices.Setup(c => c.Add(It.IsAny<Company>()));
+            mockUserServices.Setup(u => u.Add(It.IsAny<User>()));
+            var registerController = new RegisterController(mockCompanyServices.Object, mockUserServices.Object);
 
             //Act
             var result = (HttpStatusCodeResult)registerController.AddUser(newUser);
 
             //Assert
             Assert.AreEqual(HttpStatusCode.Created, (HttpStatusCode)result.StatusCode);
+            mockCompanyServices.Verify(cs => cs.Add(It.IsAny<Company>()), Times.Once);
+            mockUserServices.Verify(us => us.Add(It.IsAny<User>()), Times.Once);
         }
     }
 }

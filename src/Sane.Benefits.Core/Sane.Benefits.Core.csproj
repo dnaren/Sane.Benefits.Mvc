@@ -51,6 +51,8 @@
     <Compile Include="Interfaces\ICompanyService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CompanyService.cs" />
+    <Compile Include="Interfaces\IUserService.cs" />
+    <Compile Include="Services\UserService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Sane.Benefits.Data\Sane.Benefits.Data.csproj">

@@ -106,6 +106,10 @@
     <Compile Include="ViewModels\NewUserViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Sane.Benefits.Core\Sane.Benefits.Core.csproj">
+      <Project>{3BEE0218-7289-4917-95B2-1C4636F86A10}</Project>
+      <Name>Sane.Benefits.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Sane.Benefits.Models\Sane.Benefits.DomainModels.csproj">
       <Project>{D36A1C0A-DC0F-4D33-A530-D35651A15D4C}</Project>
       <Name>Sane.Benefits.DomainModels</Name>

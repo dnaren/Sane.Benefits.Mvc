@@ -2,8 +2,8 @@
 
 namespace Sane.Benefits.Core.Interfaces
 {
-    public interface ICompanyService
+    public interface IUserService
     {
-        void Add(Company company);
+        void Add(User user);
     }
 }
